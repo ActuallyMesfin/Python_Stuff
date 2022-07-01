@@ -1,7 +1,18 @@
+#THE WHOLE OF POINT OF THIS IS SIMPLY TO PUT RANDOM JUMPSCARES
+#BECAUSE WHY THE HELL NOT, EH?
+#⚠️I DOWNLOADED THE DOWNGRADED VERSION OF PLAYSOUND LIBRARY FROM PIP
+#⚠️DUE TO AN ERROR THAT KEPT POPPING UP (MIS OR SOMETHING)
+#USE THIS: pip uninstall playsound AND THEN pip install playsound==1.2.2 IF YOU DOWNLOADED
+#THE LATEST VERSION
+
+
+
+#---------------------------------IMPORTS
 import cv2
 import random
 import time
-from playsound import playsound
+from playsound import playsound 
+#---------------------------------IMPORTS
 
 letters = ['A', 'B', 'C', 'D', 'E']
 
