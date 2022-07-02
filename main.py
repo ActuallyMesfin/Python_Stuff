@@ -20,19 +20,20 @@ while True:
     #---------------------------
     choice = ('Images\\' + str(random.randint(1,5)))
     a_choice = ('Audio\\' + random.choice(letters))
-    t_choice = random.randint(40, 300) 
+    t_choice = random.randint(10, 30) 
     pic = (f"{choice}.jpg")
     sound = str(f"{a_choice}.mp3")
     #---------------------------
     print(pic)
+    print("BOO!")
 
     x = cv2.imread(pic)
 
     cv2.imshow("Bruh", x)
 
     cv2.waitKey(1)
-    
     playsound(sound)
+    
     cv2.destroyAllWindows()
     time.sleep(t_choice)
 
