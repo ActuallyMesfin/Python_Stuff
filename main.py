@@ -18,9 +18,9 @@ letters = ['A', 'B', 'C', 'D', 'E']
 
 while True:
     #---------------------------
-    choice = str(random.randint(1,5))
-    a_choice = random.choice(letters)
-    t_choice = random.randint(40, 300) #40 Seconds to 5 minutes random interval
+    choice = ('Images\\' + str(random.randint(1,5)))
+    a_choice = ('Audio\\' + random.choice(letters))
+    t_choice = random.randint(40, 300) 
     pic = (f"{choice}.jpg")
     sound = str(f"{a_choice}.mp3")
     #---------------------------
@@ -30,11 +30,10 @@ while True:
 
     cv2.imshow("Bruh", x)
 
-    if cv2.waitKey(1) &0xFF == ord('q'):
-        continue
+    cv2.waitKey(1)
     
     playsound(sound)
-
+    cv2.destroyAllWindows()
     time.sleep(t_choice)
 
 
